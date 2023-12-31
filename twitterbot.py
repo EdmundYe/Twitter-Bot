@@ -9,8 +9,8 @@ driver = webdriver.Chrome()
 
 class twitterBot:
     def __init__(self, username, password):
-        self.username = "cappabarra"
-        self.password = "edmundye342587797"
+        self.username = "username"
+        self.password = "password"
         self.bot = driver
 
     def login(self):
@@ -54,6 +54,6 @@ class twitterBot:
         bot.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         
 
-bot = twitterBot('cappabarra', 'edmundye342587797')
+bot = twitterBot('username', 'password')
 bot.login()
 bot.likeAndReply()
